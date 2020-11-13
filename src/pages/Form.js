@@ -97,35 +97,35 @@ export default function Form() {
                     </div>
                     <div>
                         <label>Name:
-                            <input onChange={changeHandler} type='text' value={form.name} name='name'></input> 
+                            <input onChange={changeHandler} type='text' value={form.name} name='name' className='name'></input> 
                         </label>
                     </div>
                     <div>
                         <label>Pizza size:
-                            <select onChange={changeHandler} value={form.size} name='size'>
+                            <select onChange={changeHandler} value={form.size} name='size' className='select-size'>
                                 <option value=''>--Please choose a size--</option>
-                                <option value='xl'>Extra Large 20"</option>
-                                <option value='l'>Large 16"</option>
-                                <option value='m'>Medium 12"</option>
-                                <option value='s'>Small 8"</option>
+                                <option value='xl' className='x-large'>Extra Large 20"</option>
+                                <option value='l' className='large'>Large 16"</option>
+                                <option value='m' className='medium'>Medium 12"</option>
+                                <option value='s' className='small'>Small 8"</option>
                             </select>
                         </label>
                     </div>
                     <div className='toppings'>
                         <div className={`cheese-container`}>
-                            <input onChange={changeHandler} value={form.cheese} type='checkbox' name='cheese'/>
+                            <input onChange={changeHandler} value={form.cheese} type='checkbox' name='cheese' className='cheese'/>
                             <label>Cheese</label>
                         </div>
                         <div className={`garlic-container`}>
-                            <input onChange={changeHandler} value={form.garlic} type='checkbox' name='garlic'/>
+                            <input onChange={changeHandler} value={form.garlic} type='checkbox' name='garlic' className='garlic'/>
                             <label>Garlic</label>
                         </div>
                         <div className={`oregano-container`}>
-                            <input onChange={changeHandler} value={form.oregano} type='checkbox' name='oregano'/>
+                            <input onChange={changeHandler} value={form.oregano} type='checkbox' name='oregano' className='oregano'/>
                             <label>Oregano</label>
                         </div>
                         <div className={`salami-container`}>
-                            <input onChange={changeHandler} value={form.salami} type='checkbox' name='salami'/>
+                            <input onChange={changeHandler} value={form.salami} type='checkbox' name='salami' className='salami'/>
                             <label>Salami</label>
                         </div>
                     </div>
