@@ -145,8 +145,4 @@ const FormContainer = styled.div`
     text-align: center;
     line-height: 2rem;
     font-size: 1.2rem;
-
-
-
-    border: thin black solid;
 `;
